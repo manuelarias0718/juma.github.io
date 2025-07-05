@@ -5,82 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Juma Consulting</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0e0e0e;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    header a.cta {
+      color: #e63946;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      background-color: #0e0e0e;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .hero-text {
+      flex: 1 1 500px;
+      padding: 20px;
+      max-width: 600px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-text a.btn {
+      padding: 12px 24px;
+      background-color: #e63946;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+
+    .hero-img {
+      flex: 1 1 400px;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .hero-img img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .hero-text, .hero-img {
+        padding: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-
   <header>
-    <div class="container">
-      <h1>Juma Consulting</h1>
-      <a href="#contacto" class="cta">Aplicar ahora</a>
-    </div>
+    <h1>Juma Consulting</h1>
+    <a href="#contacto" class="cta">Contactar</a>
   </header>
 
-  <!-- ——— Hero Actualizado ——— -->
-  <section class="hero-full">
-    <div class="hero-container">
-      <div class="hero-text">
-        <h1>Empoderando tu marca con datos estratégicos</h1>
-      </div>
-      <div class="hero-img">
-        <!-- Cambia esta imagen por la tuya -->
-        <img src="ruta-a-tu-imagen.jpg" alt="Imagen hero Juma">
-      </div>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Empoderando marcas con datos y resultados</h2>
+      <p>Conectamos estrategia, tecnología y creatividad para hacer crecer tu eCommerce.</p>
+      <a href="#contacto" class="btn">Hablemos</a>
+    </div>
+    <div class="hero-img">
+      <img src="assets/hero-juma.jpeg" alt="Hero Juma">
     </div>
   </section>
-  <!-- ———————————————————— -->
-
-  <section id="resultados" class="dark-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-text">
-          <h2>Empoderando a las marcas con soluciones basadas en datos</h2>
-          <p>Dedicado a crear estrategias impactantes que conecten con las audiencias y generen resultados mensurables.</p>
-          <a href="#servicios" class="btn red">Aplicar ahora</a>
-        </div>
-        <div class="col-img">
-          <img src="tabla-resultados.jpg" alt="Tabla de resultados">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="servicios" class="services">
-    <div class="container">
-      <h2 class="section-title">Todas las herramientas que necesitas...</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="icon">🎥</div>
-          <h3>Anuncios de TikTok</h3>
-          <p>Anuncios creativos en video de formato corto que captan atención y convierten.</p>
-        </div>
-        <div class="card">
-          <div class="icon">📣</div>
-          <h3>Campañas de Facebook</h3>
-          <p>Campañas específicas en Facebook que conectan con la audiencia adecuada.</p>
-        </div>
-        <div class="card">
-          <div class="icon">✉️</div>
-          <h3>Correo electrónico y SMS</h3>
-          <p>Campañas de email y SMS personalizadas que fomentan participación y conversiones.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" class="contact">
-    <div class="container">
-      <h2>¿Listo para escalar?</h2>
-      <p>Déjanos tus datos y un asesor se comunicará contigo.</p>
-      <form>
-        <input type="email" placeholder="Tu correo electrónico" required>
-        <button type="submit" class="btn red">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Juma Consulting. Todos los derechos reservados.</p>
-  </footer>
-
 </body>
 </html>
